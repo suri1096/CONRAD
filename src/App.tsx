@@ -1,0 +1,46 @@
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrandStrip } from './components/BrandStrip'
+import { Footer } from './components/Footer'
+import { FeasibilityPage } from './pages/Feasibility'
+import { HomePage } from './pages/Home'
+import { ImpactTeamPage } from './pages/ImpactTeam'
+import { ModelPage } from './pages/Model'
+import { NotFoundPage } from './pages/NotFound'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [pathname])
+  return null
+}
+
+function AppShell() {
+  return (
+    <div className="appShell">
+      <BrandStrip />
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/model" element={<ModelPage />} />
+          <Route path="/feasibility" element={<FeasibilityPage />} />
+          <Route path="/impact-team" element={<ImpactTeamPage />} />
+          <Route path="/impact" element={<Navigate to="/impact-team" replace />} />
+          <Route path="/team" element={<Navigate to="/impact-team" replace />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <AppShell />
+    </BrowserRouter>
+  )
+}
