@@ -12,8 +12,8 @@ export function HomePage() {
               Help that feels like <span className="heroEm">care</span>—not surveillance.
             </h1>
             <p className="heroLead">
-              GrandGuardian is a calm “care reasoning” model that turns daily context into gentle guidance—so seniors
-              keep independence, and families gain peace.
+              GrandGuardian is a compassionate AI-powered companion, offering care and connection to seniors. As A VOICE
+              of Love for the Elderly Powered by AI, it brings warmth, support, and safety to aging lives.
             </p>
             <div className="heroActions">
               <Link to="/model" className="button buttonPrimary">
@@ -49,17 +49,28 @@ export function HomePage() {
           <div className="card">
             <h2 className="h2">The problem</h2>
             <p className="p">
-              Families want to help without hovering. Seniors want support without losing agency. In between those
-              needs sits uncertainty: “Is everything okay?” That uncertainty becomes stress, conflict, and late help.
+              Millions of seniors around the world live alone,
+              <br />
+              often far from their loved ones. As they age,
+              <br />
+              everyday tasks can become more difficult, and
+              <br />
+              staying safe, healthy, and emotionally
+              <br />
+              connected becomes increasingly challenging.
+              <br />
+              <br />
+              Families worry constantly:
+              <br />
+              Are they okay? Did they take their medications?
+              <br />
+              Are they safe when they go outside?
+              <br />
+              <br />
+              Yet, many seniors hesitate to ask for help or use
+              <br />
+              complicated technology.
             </p>
-            <ul className="list">
-              <li>
-                <strong>For seniors:</strong> small moments of doubt can quietly shrink independence.
-              </li>
-              <li>
-                <strong>For families:</strong> constant checking feels like love—but lands like pressure.
-              </li>
-            </ul>
           </div>
 
           <div className="card">
@@ -73,6 +84,39 @@ export function HomePage() {
               “The best help feels invisible—until you need it.”
               <div className="quoteBy">GrandGuardian design principle</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section sectionTint">
+        <div className="container grid2">
+          <div className="card">
+            <h2 className="h2">Literature Inspiration</h2>
+            <div className="quote">
+              “Things have a life of their own… it’s simply a matter of waking up their souls.”
+              <div className="quoteBy">-Gabriel García Márquez, One Hundred Years of Solitude</div>
+            </div>
+            <p className="p" style={{ marginTop: 12 }}>
+              In the novel, memory loss spreads through a town like a plague. People label objects to remember names,
+              uses—even loved ones.
+            </p>
+            <p className="p">
+              That’s why we created GrandGuardian: A powerful tool to “wake up memories” through the voices of those
+              they love.
+            </p>
+          </div>
+
+          <div className="card">
+            <h2 className="h2">What the brand feels like</h2>
+            <p className="p">
+              Warm, restrained, and human. GrandGuardian isn’t “tech-first”—it’s voice-first: comfort, familiarity, and
+              calm presence.
+            </p>
+            <PlaceholderImage
+              label="Photo placeholder"
+              sublabel="Warm, real-life moment · family voice connection"
+              aspect="16/9"
+            />
           </div>
         </div>
       </section>
@@ -118,12 +162,23 @@ export function HomePage() {
       <section className="section">
         <div className="container">
           <div className="narrative">
-            <h2 className="h2">Why we built this</h2>
+            <h2 className="h2">Personal Inspiration</h2>
             <p className="p">
-              We built GrandGuardian for the quiet, ordinary moments that decide whether a day feels confident or
-              fragile: a forgotten routine, a confusing instruction, a “maybe I shouldn’t bother anyone” hesitation.
-              The goal isn’t to watch—it’s to <strong>restore steadiness</strong>. When support respects autonomy, it
-              becomes something seniors accept and families trust: a gentle partner that helps life stay life.
+              Our inspiration came from our
+              <br />
+              grandparents. They lit up every time they
+              <br />
+              heard our voices, even when it was virtually
+              <br />
+              <br />
+              That’s when we realized - a family voice isn’t
+              <br />
+              just sound, it’s emotional care.
+              <br />
+              <br />
+              So we created GrandGuardian to bring that
+              <br />
+              comfort into everyday moments
             </p>
             <div className="ctaRow">
               <Link to="/model" className="button buttonPrimary">

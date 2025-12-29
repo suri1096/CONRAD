@@ -8,10 +8,10 @@ export function FeasibilityPage() {
         <div className="container introGrid">
           <div>
             <div className="eyebrow">Page 3 · Feasibility</div>
-            <h1 className="h1">Can this actually work?</h1>
+            <h1 className="h1">Building the GrandGuardian app: can it work?</h1>
             <p className="lead">
-              The point isn’t to promise magic—it’s to show a buildable path: what already exists, what we’d build
-              first, how we’d validate, and what we’d mitigate.
+              Yes—because we’re building an app, not a fantasy: a senior-facing companion experience, a family space for
+              reassurance, and a privacy-first AI layer that uses consented voice to deliver warmth, support, and safety.
             </p>
             <div className="introLinks">
               <Link className="textLink" to="/impact-team">
@@ -20,8 +20,8 @@ export function FeasibilityPage() {
             </div>
           </div>
           <PlaceholderImage
-            label="Feasibility stack placeholder"
-            sublabel="High-level: sensing → voice → inference → safety ops"
+            label="App architecture placeholder"
+            sublabel="Senior app · Family app · Voice library · AI care logic"
             aspect="21/9"
           />
         </div>
@@ -30,46 +30,49 @@ export function FeasibilityPage() {
       <section className="section">
         <div className="container grid2">
           <div className="card">
-            <h2 className="h2">What exists today</h2>
-            <p className="p">The building blocks are real, mature, and getting cheaper.</p>
+            <h2 className="h2">What exists today (the app enablers)</h2>
+            <p className="p">The core app ingredients already exist and can be assembled responsibly.</p>
             <ul className="list">
               <li>
-                <strong>Everyday sensing:</strong> basic motion / presence signals, device state, time context
+                <strong>Mobile platforms:</strong> iOS/Android notifications, permissions, on-device capabilities
               </li>
               <li>
-                <strong>Voice tech:</strong> high-quality speech recognition + natural voice generation
+                <strong>Voice and audio:</strong> recording, playback, and high-quality speech pipelines
               </li>
               <li>
-                <strong>Basic inference:</strong> pattern detection, anomaly signals, simple reasoning scaffolds
+                <strong>AI tooling:</strong> modern inference + safety layers + evaluation practices
               </li>
               <li>
-                <strong>Care workflows:</strong> escalation trees, call centers, community response networks
+                <strong>Secure backends:</strong> authentication, encrypted storage, audit logs, access controls
               </li>
             </ul>
           </div>
 
           <div className="card">
-            <h2 className="h2">What we build first (MVP concept)</h2>
+            <h2 className="h2">What we build first (MVP app)</h2>
             <p className="p">
-              Not “everything.” A focused model that proves the hard part: dignified, context-aware reasoning that feels
-              calm.
+              Not everything. A focused first release that proves the hardest requirement: the app feels supportive,
+              safe, and non-intrusive in daily life.
             </p>
             <div className="callout">
               <div className="calloutTitle">MVP goal</div>
               <div className="calloutBody">
-                Demonstrate a small set of everyday moments where gentle guidance measurably reduces uncertainty for
-                seniors and stress for families.
+                Prove that a loved voice + AI timing can reduce worry and increase confidence—without making seniors
+                feel monitored.
               </div>
             </div>
             <ul className="list">
               <li>
-                <strong>Limited contexts:</strong> a few routines (morning, evening, leaving/arriving)
+                <strong>Senior app experience:</strong> simple, large-type, calm prompts with an easy “pause” control
               </li>
               <li>
-                <strong>Care preferences:</strong> “what help feels like” settings (tone, frequency, escalation)
+                <strong>Family voice library:</strong> record short supportive messages (with consent + review)
               </li>
               <li>
-                <strong>Reasoning layer:</strong> explainable choices (why it spoke, why it stayed quiet)
+                <strong>Care logic MVP:</strong> a small set of moments (routine drift, uncertainty, outside safety)
+              </li>
+              <li>
+                <strong>Family reassurance space:</strong> simple check-in signals and escalation preferences
               </li>
             </ul>
           </div>
@@ -79,44 +82,50 @@ export function FeasibilityPage() {
       <section className="section sectionTint">
         <div className="container grid2">
           <div className="card">
-            <h2 className="h2">How we validate it</h2>
+            <h2 className="h2">How we validate the app</h2>
             <p className="p">
-              Validation is about trust and outcomes—measured in the smallest moments that change how a day feels.
+              We validate with real people, measuring whether the app feels like love—not noise.
             </p>
             <ul className="list">
               <li>
-                <strong>Pilot plan:</strong> small cohort with opt-in consent, clear boundaries, and easy off-switch
+                <strong>Pilot plan:</strong> opt-in cohort; clear consent; simple “off” switch; support line for issues
               </li>
               <li>
-                <strong>Evaluation:</strong> perceived dignity + confidence + caregiver reassurance
+                <strong>Primary outcomes:</strong> dignity (“felt respected”), confidence, caregiver reassurance
               </li>
               <li>
-                <strong>Operational metrics:</strong> fewer unnecessary check-ins, time-to-help in true need
+                <strong>Product metrics:</strong> retention, message helpfulness ratings, intervention acceptance rate
               </li>
               <li>
-                <strong>Qualitative:</strong> “Did it feel supportive or intrusive?” after real scenarios
+                <strong>Safety metrics:</strong> false escalation rate, missed-need reports, response time when escalated
               </li>
             </ul>
           </div>
 
           <div className="card">
-            <h2 className="h2">Constraints + mitigations</h2>
+            <h2 className="h2">App constraints + mitigations</h2>
             <div className="stackList">
               <div className="stackItem">
-                <div className="stackTitle">Privacy</div>
-                <div className="stackBody">Consent-forward defaults, minimal retention, transparent explanations.</div>
+                <div className="stackTitle">Privacy + consent</div>
+                <div className="stackBody">
+                  Clear opt-in, visible indicators, easy pause, minimal retention, and role-based access for family.
+                </div>
               </div>
               <div className="stackItem">
-                <div className="stackTitle">False alarms</div>
-                <div className="stackBody">Bias toward reassurance and confirmation before escalation.</div>
+                <div className="stackTitle">False prompts / wrong timing</div>
+                <div className="stackBody">
+                  Human-in-the-loop tuning, “helpful / not helpful” feedback, and a bias toward quiet confirmation.
+                </div>
               </div>
               <div className="stackItem">
                 <div className="stackTitle">Adoption</div>
-                <div className="stackBody">Predictable behavior, calm tone, and easy “pause / stop” control.</div>
+                <div className="stackBody">
+                  Large type, low-friction onboarding, family-assisted setup, and predictable app behavior.
+                </div>
               </div>
               <div className="stackItem">
-                <div className="stackTitle">Cost</div>
-                <div className="stackBody">Start narrow; leverage existing devices and community partnerships.</div>
+                <div className="stackTitle">Security</div>
+                <div className="stackBody">Encryption in transit/at rest, secure auth, and audit logs for access.</div>
               </div>
             </div>
           </div>
@@ -126,37 +135,37 @@ export function FeasibilityPage() {
       <section className="section">
         <div className="container">
           <div className="sectionHeader">
-            <h2 className="h2">Roadmap</h2>
-            <p className="muted">Four phases to keep it grounded and judge-friendly.</p>
+            <h2 className="h2">Roadmap to a real app</h2>
+            <p className="muted">Four phases that move from prototype → pilot → launch.</p>
           </div>
 
           <div className="timeline" aria-label="Roadmap timeline">
             <div className="timelineStep">
               <div className="timelineDot" />
               <div className="timelineCard">
-                <div className="timelineTitle">Phase 1 · Concept validation</div>
-                <div className="timelineBody">Interviews, language tests, consent and tone exploration.</div>
+                <div className="timelineTitle">Phase 1 · Prototype the voice experience</div>
+                <div className="timelineBody">Record flows, tone tests, and a simple senior companion prototype.</div>
               </div>
             </div>
             <div className="timelineStep">
               <div className="timelineDot" />
               <div className="timelineCard">
-                <div className="timelineTitle">Phase 2 · MVP reasoning layer</div>
-                <div className="timelineBody">A narrow set of contexts with explainable choices and calm responses.</div>
+                <div className="timelineTitle">Phase 2 · MVP app (senior + family)</div>
+                <div className="timelineBody">Core app flows, consent controls, and the first care-logic moments.</div>
               </div>
             </div>
             <div className="timelineStep">
               <div className="timelineDot" />
               <div className="timelineCard">
-                <div className="timelineTitle">Phase 3 · Pilot + evaluation</div>
-                <div className="timelineBody">Small cohort, opt-in, refine interventions, measure trust outcomes.</div>
+                <div className="timelineTitle">Phase 3 · Pilot + safety evaluation</div>
+                <div className="timelineBody">Cohort pilot, measure trust, tune timing, and harden privacy/security.</div>
               </div>
             </div>
             <div className="timelineStep">
               <div className="timelineDot" />
               <div className="timelineCard">
-                <div className="timelineTitle">Phase 4 · Partnerships + scaling</div>
-                <div className="timelineBody">Senior centers and community orgs; expand contexts responsibly.</div>
+                <div className="timelineTitle">Phase 4 · Launch + partnerships</div>
+                <div className="timelineBody">Community partners, broader rollout, and expansion of care moments.</div>
               </div>
             </div>
           </div>
