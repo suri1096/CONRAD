@@ -50,12 +50,12 @@ export function HomePage() {
             <div className="storyKicker">The problem</div>
             <h2 className="h2 storyTitle">Aging alone turns small moments into constant worry.</h2>
 
-            <div className="poem">
-              <span className="poemLine">Millions of seniors around the world live alone,</span>
-              <span className="poemLine">often far from their loved ones. As they age,</span>
-              <span className="poemLine">everyday tasks can become more difficult, and</span>
-              <span className="poemLine">staying safe, healthy, and emotionally</span>
-              <span className="poemLine">connected becomes increasingly challenging.</span>
+            <div className="storyBlock">
+              <p className="storyParagraph">
+                Millions of seniors around the world live alone, often far from their loved ones. As they age, everyday
+                tasks can become more difficult, and staying safe, healthy, and emotionally connected becomes
+                increasingly challenging.
+              </p>
             </div>
 
             <div className="dividerSoft" aria-hidden="true" />
