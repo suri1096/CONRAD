@@ -46,31 +46,51 @@ export function HomePage() {
 
       <section className="section">
         <div className="container grid2">
-          <div className="card">
-            <h2 className="h2">The problem</h2>
-            <p className="p">
-              Millions of seniors around the world live alone,
-              <br />
-              often far from their loved ones. As they age,
-              <br />
-              everyday tasks can become more difficult, and
-              <br />
-              staying safe, healthy, and emotionally
-              <br />
-              connected becomes increasingly challenging.
-              <br />
-              <br />
-              Families worry constantly:
-              <br />
-              Are they okay? Did they take their medications?
-              <br />
-              Are they safe when they go outside?
-              <br />
-              <br />
-              Yet, many seniors hesitate to ask for help or use
-              <br />
-              complicated technology.
+          <div className="card storyCard storyCardProblem">
+            <div className="storyKicker">The problem</div>
+            <h2 className="h2 storyTitle">Aging alone turns small moments into constant worry.</h2>
+
+            <div className="poem">
+              <span className="poemLine">Millions of seniors around the world live alone,</span>
+              <span className="poemLine">often far from their loved ones. As they age,</span>
+              <span className="poemLine">everyday tasks can become more difficult, and</span>
+              <span className="poemLine">staying safe, healthy, and emotionally</span>
+              <span className="poemLine">connected becomes increasingly challenging.</span>
+            </div>
+
+            <div className="dividerSoft" aria-hidden="true" />
+
+            <p className="p muted" style={{ marginBottom: 0 }}>
+              Yet, many seniors hesitate to ask for help or use complicated technology.
             </p>
+          </div>
+
+          <div className="card storyCard storyCardWorry">
+            <div className="storyKicker">Families worry constantly</div>
+            <h2 className="h2 storyTitle">The questions repeat—because love has no off switch.</h2>
+            <div className="questionStack" aria-label="Family worry questions">
+              <div className="questionPill">
+                <span className="questionMark" aria-hidden="true">
+                  ?
+                </span>
+                Are they okay?
+              </div>
+              <div className="questionPill">
+                <span className="questionMark" aria-hidden="true">
+                  ?
+                </span>
+                Did they take their medications?
+              </div>
+              <div className="questionPill">
+                <span className="questionMark" aria-hidden="true">
+                  ?
+                </span>
+                Are they safe when they go outside?
+              </div>
+            </div>
+            <div className="worryNote">
+              When reassurance is missing, families fill the silence with check-ins—often at the cost of dignity.
+            </div>
           </div>
 
           <div className="card">
@@ -163,23 +183,34 @@ export function HomePage() {
         <div className="container">
           <div className="narrative">
             <h2 className="h2">Personal Inspiration</h2>
-            <p className="p">
-              Our inspiration came from our
-              <br />
-              grandparents. They lit up every time they
-              <br />
-              heard our voices, even when it was virtually
-              <br />
-              <br />
-              That’s when we realized - a family voice isn’t
-              <br />
-              just sound, it’s emotional care.
-              <br />
-              <br />
-              So we created GrandGuardian to bring that
-              <br />
-              comfort into everyday moments
-            </p>
+            <div className="inspirationGrid">
+              <div className="inspirationVisual">
+                <div className="polaroid">
+                  <PlaceholderImage
+                    label="Personal inspiration photo placeholder"
+                    sublabel="Grandparents · a moment that lights up"
+                    aspect="3/2"
+                  />
+                  <div className="polaroidCaption">“They lit up the moment they heard us.”</div>
+                </div>
+                <div className="voiceMotif" aria-hidden="true">
+                  <div className="voiceBars" />
+                </div>
+              </div>
+
+              <div className="inspirationText">
+                <p className="letter">
+                  <span className="dropCap">O</span>ur inspiration came from our grandparents. They lit up every time
+                  they heard our voices, even when it was virtually.
+                </p>
+                <p className="letter">
+                  That’s when we realized — a family voice isn’t just sound, it’s emotional care.
+                </p>
+                <p className="letter" style={{ marginBottom: 0 }}>
+                  So we created GrandGuardian to bring that comfort into everyday moments.
+                </p>
+              </div>
+            </div>
             <div className="ctaRow">
               <Link to="/model" className="button buttonPrimary">
                 See the Model

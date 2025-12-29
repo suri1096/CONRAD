@@ -67,7 +67,7 @@ export function ModelPage() {
         <div className="container introGrid">
           <div>
             <div className="eyebrow">Page 2 · The Model</div>
-            <h1 className="h1">What the innovation is (as a model)</h1>
+            <h1 className="h1">What the innovation is: A Voice of Love for the Elderly Powered by AI</h1>
             <p className="lead">
               Think of GrandGuardian like a museum exhibit: a concept you can understand at a glance—built from warmth,
               restraint, and the emotional truth of a familiar voice.
