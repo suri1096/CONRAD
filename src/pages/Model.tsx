@@ -38,7 +38,7 @@ type ModelStep = {
 
 const steps: ModelStep[] = [
   {
-    title: 'Step 1: Voice Cloning',
+    title: 'Feature 1: Voice Cloning',
     what: 'Create a voice clone of a loved one so support sounds like love.',
     how: [
       'Create a voice clone using ElevenLabs through uploading the user’s loved one’s voice.',
@@ -46,11 +46,11 @@ const steps: ModelStep[] = [
       'Generate a real-time, personalized voice of a loved one based on their needs.',
     ],
     why: 'Providing reminders and sharing stories helps create long-lasting memories, reduce anxiety, and deepen family bonds.',
-    imageLabel: 'Step 1 placeholder',
+    imageLabel: 'Feature 1 placeholder',
     imageSublabel: 'Upload voice → Voice ID → real-time loved voice',
   },
   {
-    title: 'Step 2: Object Detector',
+    title: 'Feature 2: Object Detector',
     what: 'Turn real-world obstacles into calm spoken alerts.',
     how: [
       'Connect the app to ChatGPT’s Image Classification.',
@@ -58,44 +58,44 @@ const steps: ModelStep[] = [
       'Convert detections into spoken alerts in the familiar, comforting voice of a loved one using ElevenLabs voice cloning.',
     ],
     why: 'Real-time guidance in a trusted voice can reduce anxiety and improve confidence while moving through the world.',
-    imageLabel: 'Step 2 placeholder',
+    imageLabel: 'Feature 2 placeholder',
     imageSublabel: 'Camera → classification → loved-voice alert',
   },
   {
-    title: 'Step 3: Story Time',
+    title: 'Feature 3: Story Time',
     what: 'Read-aloud stories for emotional support, narrated in a loved one’s voice.',
     how: [
       'Users can select from 6 storytelling styles: Family, Memories, Animals, Kindness, Bedtime, and Shuffle.',
       'Stories are narrated in a loved one’s voice to provide comfort and connection.',
     ],
     why: 'Personalized storytelling brings comfort, joy, and emotional connection through familiar narration.',
-    imageLabel: 'Step 3 placeholder',
+    imageLabel: 'Feature 3 placeholder',
     imageSublabel: '6 styles · loved-voice narration',
   },
   {
-    title: 'Step 4: First Aid',
+    title: 'Feature 4: First Aid',
     what: 'A bystander-friendly emergency profile that can announce critical information fast.',
     how: [
       'Users set up First Aid information: name, age, gender, medical history, current medications (including medication locations), heart rate range, allergies, blood type, other notes, and emergency contacts.',
       'Bystanders press “Announce Information” to quickly announce the user’s information in case of an emergency.',
     ],
     why: 'When seconds matter, this helps people nearby respond with clarity and confidence.',
-    imageLabel: 'Step 4 placeholder',
+    imageLabel: 'Feature 4 placeholder',
     imageSublabel: 'Emergency profile → announce button',
   },
   {
-    title: 'Step 5: Reminders',
+    title: 'Feature 5: Reminders',
     what: 'Smart reminders for medications and events—spoken in a loved one’s voice.',
     how: [
       'Users can add, edit, and delete medication and event reminders.',
       'Text-to-speech uses a loved one’s voice to announce upcoming appointments, events, and medication intake times.',
     ],
     why: 'Turns routines into reassurance—supportive, familiar, and easy to follow.',
-    imageLabel: 'Step 5 placeholder',
+    imageLabel: 'Feature 5 placeholder',
     imageSublabel: 'Medication + events → loved-voice reminders',
   },
   {
-    title: 'Step 6: SOS - Heart Rate Monitoring',
+    title: 'Feature 6: SOS - Heart Rate Monitoring',
     what: 'Automatic SOS based on heart rate monitoring via Bluetooth.',
     how: [
       'Connect a heart rate monitoring device to the app through Bluetooth communication.',
@@ -104,11 +104,11 @@ const steps: ModelStep[] = [
       'A real-time message is sent to the emergency contact. At the same time, alarms go off to alert people around, calling for help.',
     ],
     why: 'Escalates quickly when it matters most—help can arrive sooner with less guesswork.',
-    imageLabel: 'Step 6 placeholder',
+    imageLabel: 'Feature 6 placeholder',
     imageSublabel: 'Bluetooth HR → thresholds → SOS + alarm',
   },
   {
-    title: 'Step 7: Invisible Fall Detection',
+    title: 'Feature 7: Invisible Fall Detection',
     what: 'Hands-free fall detection using the phone’s motion sensors (no button or wearable needed).',
     how: [
       'Detects falls using the phone’s motion sensors — no button or wearable device needed.',
@@ -116,7 +116,7 @@ const steps: ModelStep[] = [
       'Reduces false alarms from accidental phone drops.',
     ],
     why: 'Discreet safety that stays in the background—ready when needed, quiet when not.',
-    imageLabel: 'Step 7 placeholder',
+    imageLabel: 'Feature 7 placeholder',
     imageSublabel: 'Motion sensors → detect → confirm → alert',
   },
 ]
@@ -150,8 +150,8 @@ export function ModelPage() {
       <section className="section">
         <div className="container">
           <div className="sectionHeader">
-            <h2 className="h2">Seven steps: how GrandGuardian “wakes up memories”</h2>
-            <p className="muted">Each step includes a placeholder image you can replace later.</p>
+            <h2 className="h2">Seven features (inside the app)</h2>
+            <p className="muted">Each feature includes a placeholder image you can replace later.</p>
           </div>
 
           <div className="grid2">
@@ -186,27 +186,56 @@ export function ModelPage() {
       <section className="section sectionTint">
         <div className="container">
           <div className="sectionHeader">
-            <h2 className="h2">Three pillars (artistic, human-first)</h2>
+            <h2 className="h2">Three pillars (the design principles)</h2>
           </div>
-          <div className="grid3">
-            <div className="card">
-              <h3 className="h3">Familiarity</h3>
-              <p className="p">
-                The comfort of a loved voice: memory, warmth, and “I’m here” — delivered in a way that feels personal.
-              </p>
+          <div className="pillars">
+            <div className="pillar pillarFamiliarity">
+              <div className="pillarCap">
+                <div className="pillarMedallion" aria-hidden="true">
+                  ♡
+                </div>
+              </div>
+              <div className="pillarBody">
+                <div className="pillarTitle">Familiarity</div>
+                <div className="pillarLine" aria-hidden="true" />
+                <div className="pillarText">
+                  The comfort of a loved voice: memory, warmth, and “I’m here” — delivered in a way that feels personal.
+                </div>
+              </div>
+              <div className="pillarBase" aria-hidden="true" />
             </div>
-            <div className="card">
-              <h3 className="h3">Restraint</h3>
-              <p className="p">
-                Care is often what you don’t do: fewer interruptions, softer moments, and silence that respects daily
-                life.
-              </p>
+
+            <div className="pillar pillarRestraint">
+              <div className="pillarCap">
+                <div className="pillarMedallion" aria-hidden="true">
+                  ∿
+                </div>
+              </div>
+              <div className="pillarBody">
+                <div className="pillarTitle">Restraint</div>
+                <div className="pillarLine" aria-hidden="true" />
+                <div className="pillarText">
+                  Care is often what you don’t do: fewer interruptions, softer moments, and silence that respects daily
+                  life.
+                </div>
+              </div>
+              <div className="pillarBase" aria-hidden="true" />
             </div>
-            <div className="card">
-              <h3 className="h3">Dignity</h3>
-              <p className="p">
-                Support that asks, not takes. Consent, clarity, and control—so help never feels like being watched.
-              </p>
+
+            <div className="pillar pillarDignity">
+              <div className="pillarCap">
+                <div className="pillarMedallion" aria-hidden="true">
+                  ◇
+                </div>
+              </div>
+              <div className="pillarBody">
+                <div className="pillarTitle">Dignity</div>
+                <div className="pillarLine" aria-hidden="true" />
+                <div className="pillarText">
+                  Support that asks, not takes. Consent, clarity, and control—so help never feels like being watched.
+                </div>
+              </div>
+              <div className="pillarBase" aria-hidden="true" />
             </div>
           </div>
         </div>

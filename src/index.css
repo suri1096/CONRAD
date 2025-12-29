@@ -814,6 +814,113 @@ a {
   margin-top: 6px;
 }
 
+/* Pillars (The App page) */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: end;
+  margin-top: 14px;
+}
+
+.pillar {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+  min-height: 340px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  background:
+    radial-gradient(520px 220px at 10% 0%, rgba(31, 135, 121, 0.14), transparent 55%),
+    radial-gradient(520px 220px at 100% 10%, rgba(216, 154, 78, 0.16), transparent 58%);
+}
+
+.pillarCap {
+  position: relative;
+  padding: 14px 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillarMedallion {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgba(27, 28, 30, 0.86);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  box-shadow: 0 14px 28px rgba(18, 20, 22, 0.08);
+}
+
+.pillarBody {
+  position: relative;
+  padding: 8px 16px 14px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.pillarTitle {
+  font-weight: 920;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+}
+
+.pillarLine {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(27, 28, 30, 0.16), transparent);
+}
+
+.pillarText {
+  color: rgba(27, 28, 30, 0.78);
+  line-height: 1.65;
+}
+
+.pillarBase {
+  height: 14px;
+  background: linear-gradient(90deg, rgba(31, 135, 121, 0.18), rgba(216, 154, 78, 0.18));
+}
+
+.pillarFamiliarity .pillarBase {
+  background: linear-gradient(90deg, rgba(216, 154, 78, 0.22), rgba(31, 135, 121, 0.14));
+}
+
+.pillarRestraint .pillarBase {
+  background: linear-gradient(90deg, rgba(31, 135, 121, 0.22), rgba(31, 135, 121, 0.08));
+}
+
+.pillarDignity .pillarBase {
+  background: linear-gradient(90deg, rgba(31, 135, 121, 0.14), rgba(216, 154, 78, 0.22));
+}
+
+.pillarFamiliarity {
+  transform: translateY(10px);
+}
+
+.pillarRestraint {
+  transform: translateY(0px);
+}
+
+.pillarDignity {
+  transform: translateY(18px);
+}
+
 /* Feasibility stack list */
 .stackList {
   display: grid;
@@ -1109,6 +1216,16 @@ a {
 
   .metrics {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .pillarFamiliarity,
+  .pillarRestraint,
+  .pillarDignity {
+    transform: none;
   }
 
   .teamGrid {
