@@ -99,6 +99,14 @@ a {
   transform: translateY(0);
 }
 
+/* Speed up reveal animations inside features section */
+.featuresFast .reveal {
+  /* transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out); */
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 /* Brand strip */
 .brandStrip {
   position: sticky;
@@ -733,6 +741,15 @@ a {
   position: absolute;
   inset: 0;
   padding: 16px;
+}
+
+/* App feature image */
+.featureImage {
+ width: 100%;
+ height: auto;
+ display: block;
+ border-radius: var(-radius-lg);
+ box-shadow: var(--shadow);
 }
 
 /* Model diagram */

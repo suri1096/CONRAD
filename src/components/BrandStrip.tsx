@@ -5,7 +5,8 @@ const navItems = [
   { to: '/', label: 'Home' },
   { to: '/model', label: 'The App' },
   { to: '/feasibility', label: 'Feasibility' },
-  { to: '/impact-team', label: 'Impact + Team' },
+  { to: '/impact', label: 'Impact' },
+  { to: '/team', label: 'Team' },
 ] as const
 
 export function BrandStrip() {
@@ -16,7 +17,7 @@ export function BrandStrip() {
           <BrandLogo className="logoMark" />
           <div className="brandText">
             <div className="brandName">GrandGuardian</div>
-            <div className="brandTagline">Calm support that preserves dignity.</div>
+            <div className="brandTagline">A Voice of Love for the Elderly Powered by AI.</div>
           </div>
         </Link>
 
